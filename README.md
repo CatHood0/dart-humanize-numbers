@@ -2,7 +2,7 @@
 
 > [!NOTE]
 >
-> This is a package based on [number_to_string](https://pub.dev/packages/number_to_string). However, since it doesn't add translations or is regularly maintained, I opted to create my own version that works with a wide variety of languages (and is more extensible and readable). In other words, this is a version that improves on absolutely every aspect of [number_to_string](https://pub.dev/packages/number_to_string).
+> This package is partially based on [number_to_string](https://pub.dev/packages/number_to_string). However, since it doesn't add translations (Arabic and English) or is regularly maintained, I opted to create my own version that works with a wide variety of languages (and is more extensible and readable). In other words, this is a version that improves on absolutely every aspect of [number_to_string](https://pub.dev/packages/number_to_string).
 
 A Dart library to convert numbers into their word representation in multiple languages. Perfect for financial, educational, or localization-focused applications.
 
