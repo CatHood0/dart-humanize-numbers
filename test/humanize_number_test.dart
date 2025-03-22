@@ -1,4 +1,4 @@
-import 'package:humanize_numbers/dart_humanize_numbers.dart';
+import 'package:humanize_numbers/humanize_numbers.dart';
 import 'package:test/test.dart';
 
 void main() {
