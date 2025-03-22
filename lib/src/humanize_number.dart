@@ -66,8 +66,9 @@ final class HumanizeNumber {
   /// ```
   String parse(int number, String lang) {
     // we can avoid parse numbers when them are already processed and cached
-    if (number == _digit.value && currentTranslationLanguage == lang)
+    if (number == _digit.value && currentTranslationLanguage == lang) {
       return lastResult;
+    }
     _context.regenerateContext();
     translation.value = Translations.getTranslation(lang);
     _digit.value = number;
