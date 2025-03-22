@@ -20,7 +20,7 @@ A Dart library to convert numbers into their word representation in multiple lan
 ## Usage Example
 
 ```dart
-import 'package:humanize_numbers/dart_humanize_numbers.dart';
+import 'package:humanize_numbers/humanize_numbers.dart';
 
 void main() {
   final humanizer = HumanizeNumber();
