@@ -120,9 +120,8 @@ Treated as unique words in most languages:
 - English: `eleven`, `twelve` (not `ten-one`).
 - German: `elf`, `zwölf`.
 
-#### C. Gender & Pluralization (Arabic/Spanish)
+#### C. Pluralization (Arabic/Spanish)
 
-- Arabic: Gender agreement for units (e.g., `مليون` vs. `مليونان`).
 - Spanish: `ciento` (101) vs. `cien` (100).
 
 ## Contributing
