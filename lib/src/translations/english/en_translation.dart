@@ -126,12 +126,13 @@ class EnglishTranslation extends HumanizeTranslation
   // this override will ensure we're adding "-" between ten numbers
   // (e.g: eighty-six, fifty-five, etc)
   @override
-  String getTen(int number, {required HumanizeContext context, int? remainder}) {
+  String getTen(int number,
+      {required HumanizeContext context, int? remainder}) {
     // Check if we have a remainder that is into the range of 1-9
     //
     if (number.checkRange(min: 20, max: 99, strict: false) &&
         remainder.checkRange(min: 1, max: 9, strict: false)) {
-      // this removes the whitespace that we add 
+      // this removes the whitespace that we add
       // by default using `connector` method
       context.ignoreNextConnector = true;
       return '${super.getTen(number, context: context, remainder: remainder)}-';

@@ -136,7 +136,8 @@ class SpanishTranslation extends HumanizeTranslation
     // "Veintiuno" instead of "Veinte uno"
     // "Veintidos" instead of "Veinte dos"
     // "Veintitres" instead of "Veinte tres"
-    final String ten = super.getTen(number, context: context, remainder: remainder);
+    final String ten =
+        super.getTen(number, context: context, remainder: remainder);
     if (number.checkRange(min: 20, max: 29, strict: false) &&
         remainder != null &&
         remainder.checkRange(min: 0, max: 10)) {
@@ -149,7 +150,8 @@ class SpanishTranslation extends HumanizeTranslation
   }
 
   @override
-  String getHundred(int number, {required HumanizeContext context, int? remainder}) {
+  String getHundred(int number,
+      {required HumanizeContext context, int? remainder}) {
     // this is a special case that appears with spanish
     // numbers
     //

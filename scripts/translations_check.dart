@@ -8,7 +8,8 @@ const int _expectedTranslationKeysLength = 7;
 
 Future<void> main(List<String> args) async {
   checkLength();
-  for (final HumanizeTranslation trans in Translations.supportedTranslations.values) {
+  for (final HumanizeTranslation trans
+      in Translations.supportedTranslations.values) {
     _validateMap(
       trans.ones,
       List<String>.generate(10, (int i) => "_$i"),
@@ -56,8 +57,8 @@ Future<void> main(List<String> args) async {
   exit(1);
 }
 
-
-void _validateMap(Map<String, dynamic> map, List<String> requiredKeys, String mapName) {
+void _validateMap(
+    Map<String, dynamic> map, List<String> requiredKeys, String mapName) {
   for (String key in requiredKeys) {
     if (!map.containsKey(key)) {
       print("Missing key '$key' in $mapName");
@@ -67,7 +68,8 @@ void _validateMap(Map<String, dynamic> map, List<String> requiredKeys, String ma
 }
 
 void checkLength() {
-  final int newTranslationKeysLength = Translations.supportedTranslations.keys.length;
+  final int newTranslationKeysLength =
+      Translations.supportedTranslations.keys.length;
 
   if (newTranslationKeysLength > _expectedTranslationKeysLength) {
     print(

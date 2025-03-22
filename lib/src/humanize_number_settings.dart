@@ -1,7 +1,7 @@
 import 'package:meta/meta.dart';
 
 /// Configuration settings for number humanization output formatting
-/// 
+///
 /// This class is for internal library use only and should not be used directly.
 @internal
 class HumanizeNumberSettings {

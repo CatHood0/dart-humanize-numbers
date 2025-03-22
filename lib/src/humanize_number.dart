@@ -66,7 +66,8 @@ final class HumanizeNumber {
   /// ```
   String parse(int number, String lang) {
     // we can avoid parse numbers when them are already processed and cached
-    if (number == _digit.value && currentTranslationLanguage == lang) return lastResult;
+    if (number == _digit.value && currentTranslationLanguage == lang)
+      return lastResult;
     _context.regenerateContext();
     translation.value = Translations.getTranslation(lang);
     _digit.value = number;
@@ -85,8 +86,9 @@ final class HumanizeNumber {
     final List<String> concats = List<String>.filled(serialized.length, "");
     for (int i = 0; i < serialized.length; i++) {
       int currentValue = int.parse(serialized[i].reversed.join());
-      int nextValue =
-          (i < serialized.length - 1) ? int.parse(serialized[i + 1].reversed.join()) : -1;
+      int nextValue = (i < serialized.length - 1)
+          ? int.parse(serialized[i + 1].reversed.join())
+          : -1;
       if (currentValue > 0) {
         String connector = translation.value.and(
           currentValue,
@@ -115,7 +117,8 @@ final class HumanizeNumber {
         } else {
           int adjustedColumn = (serialized.length - 2) - i;
           str.write(
-            _addSuffixPrefix(serialized[i], serialized, adjustedColumn)! + concats[i],
+            _addSuffixPrefix(serialized[i], serialized, adjustedColumn)! +
+                concats[i],
           );
         }
       }

@@ -125,7 +125,8 @@ class GermanTranslation extends HumanizeTranslation
       };
 
   @override
-  String getOne(int number, {required HumanizeContext context, int? remainder}) {
+  String getOne(int number,
+      {required HumanizeContext context, int? remainder}) {
     // "eins" needs to be "ein" when:
     // - is not odd (ej: 21 → einundzwanzig).
     if (number == 1) {

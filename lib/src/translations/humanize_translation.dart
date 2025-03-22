@@ -2,7 +2,7 @@ import 'package:humanize_numbers/src/humanize_context.dart';
 import 'package:meta/meta.dart';
 
 /// Abstract base class for number-to-word translation implementations
-/// 
+///
 /// This class is for internal library use only and should not be used directly.
 /// Implementations must provide localized translations for number components.
 @internal
@@ -16,7 +16,7 @@ abstract class HumanizeTranslation {
   /// Generates appropriate conjunction between number groups
   ///
   /// If isRTL is true, left will be right, and right will be left
-  /// 
+  ///
   /// [left]: Left side number value
   /// [right]: Right side number value
   /// [columnIndex]: Current group position (0-based)
@@ -72,14 +72,14 @@ abstract class HumanizeTranslation {
   Map<String, String> get quintillions;
 
   /// Converts a single-digit number to words
-  /// 
+  ///
   /// [number]: Value between 0-9
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
   String getOne(int number, {required HumanizeContext context, int? remainder});
 
   /// Converts a teen number (11-19) to words
-  /// 
+  ///
   /// [number]: Value between 11-19
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
@@ -87,14 +87,14 @@ abstract class HumanizeTranslation {
       {required HumanizeContext context, int? remainder});
 
   /// Converts a tens multiple (10-90) to words
-  /// 
+  ///
   /// [number]: Value between 10-90 (step 10)
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
   String getTen(int number, {required HumanizeContext context, int? remainder});
 
   /// Converts a hundreds multiple (100-900) to words
-  /// 
+  ///
   /// [number]: Value between 100-900 (step 100)
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
@@ -102,7 +102,7 @@ abstract class HumanizeTranslation {
       {required HumanizeContext context, int? remainder});
 
   /// Gets thousand group denomination
-  /// 
+  ///
   /// [type]: Denomination type ("singular", "binary", "plural")
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
@@ -110,7 +110,7 @@ abstract class HumanizeTranslation {
       {required HumanizeContext context, int? remainder});
 
   /// Gets million group denomination
-  /// 
+  ///
   /// [type]: Denomination type ("singular", "binary", "plural")
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
@@ -118,7 +118,7 @@ abstract class HumanizeTranslation {
       {required HumanizeContext context, int? remainder});
 
   /// Gets billion group denomination
-  /// 
+  ///
   /// [type]: Denomination type ("singular", "binary", "plural")
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
@@ -126,7 +126,7 @@ abstract class HumanizeTranslation {
       {required HumanizeContext context, int? remainder});
 
   /// Gets trillion group denomination
-  /// 
+  ///
   /// [type]: Denomination type ("singular", "binary", "plural")
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
@@ -134,7 +134,7 @@ abstract class HumanizeTranslation {
       {required HumanizeContext context, int? remainder});
 
   /// Gets quadrillion group denomination
-  /// 
+  ///
   /// [type]: Denomination type ("singular", "binary", "plural")
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
@@ -142,7 +142,7 @@ abstract class HumanizeTranslation {
       {required HumanizeContext context, int? remainder});
 
   /// Gets quintillion group denomination
-  /// 
+  ///
   /// [type]: Denomination type ("singular", "binary", "plural")
   /// [context]: Current humanization context
   /// [remainder]: Remaining value after current group
