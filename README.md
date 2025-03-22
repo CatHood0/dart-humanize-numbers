@@ -38,18 +38,21 @@ void main() {
 ### German (Deutsch)
 ```dart
 // 2386 → "Zweitausenddreihundertsechsundachtzig"
+
 humanizer.parse(2386, 'de');
 ```
 
 ### Arabic (العربية)
 ```dart
-// 1000001 → "مليون وواحد"
+// 1000001 → `مليون وواحد`
+
 humanizer.parse(1000001, 'ar');
 ```
 
 ### Spanish (Español)
 ```dart
 // 1500 → "Mil quinientos"
+
 humanizer.parse(1500, 'es');
 ```
 
