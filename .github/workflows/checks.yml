@@ -33,6 +33,3 @@ jobs:
 
       - name: Check the translations
         run: dart ./scripts/translations_check.dart
-
-      - name: Install cider
-        run: dart pub global activate cider

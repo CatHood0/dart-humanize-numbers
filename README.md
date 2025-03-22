@@ -120,7 +120,7 @@ Treated as unique words in most languages:
 - English: `eleven`, `twelve` (not `ten-one`).
 - German: `elf`, `zwölf`.
 
-#### C. Pluralization (Arabic/Spanish)
+#### C. Pluralization (Spanish)
 
 - Spanish: `ciento` (101) vs. `cien` (100).
 

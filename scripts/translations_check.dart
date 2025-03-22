@@ -14,7 +14,6 @@ const int _expectedTranslationKeysLength = 7;
 Future<void> main(List<String> args) async {
   checkLength();
   for (final HumanizeTranslation trans in Translations.supportedTranslations.values) {
-    print('Checking ${trans.runtimeType}');
     _validateMap(
       trans.ones,
       List<String>.generate(10, (int i) => "_$i"),
@@ -56,6 +55,8 @@ Future<void> main(List<String> args) async {
       "trillions",
     );
   }
+
+  print('All the translation pass the check successfully');
 
   exit(1);
 }
