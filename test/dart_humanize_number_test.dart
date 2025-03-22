@@ -11,7 +11,7 @@ void main() {
     });
     test('should convert complex number', () {
       final String humanNumber = humanizer.parse(2386, 'en');
-      expect(humanNumber, 'Two thousand three hundred eighty six');
+      expect(humanNumber, 'Two thousand three hundred eighty-six');
     });
     test('should convert large number', () {
       final String humanNumber = humanizer.parse(1000000, 'en');

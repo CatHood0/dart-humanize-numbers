@@ -52,11 +52,18 @@ final class HumanizeNumber {
   /// [number] : Integer value to convert (0 ≤ number < 10^18)
   /// [lang]   : ISO 639-1 language code (e.g., 'en', 'es', 'ar')
   ///
-  /// Returns complete textual representation of the number.
-  ///
   /// Throws [OutOfRangeSupportedException] if number exceeds 10^18.
   ///
-  /// Caches results for repeated calls with same parameters.
+  /// Example Usage:
+  ///
+  /// ```dart
+  /// final humanizer = HumanizeNumber()
+  ///   ..settings(currency: 'USD', prefix: 'Total: ');
+  ///
+  /// print(humanizer.parse(123456789, 'en'));
+  /// // Output: "Total: One hundred twenty-three million four hundred
+  /// //         fifty-six thousand seven hundred eighty-nine USD"
+  /// ```
   String parse(int number, String lang) {
     // we can avoid parse numbers when them are already processed and cached
     if (number == _digit.value && currentTranslationLanguage == lang) return lastResult;
@@ -75,7 +82,7 @@ final class HumanizeNumber {
     _context.totalColumns = serialized.length;
 
     // generates connectors or spaces between every group
-    final List<String> concats = List.filled(serialized.length, "");
+    final List<String> concats = List<String>.filled(serialized.length, "");
     for (int i = 0; i < serialized.length; i++) {
       int currentValue = int.parse(serialized[i].reversed.join());
       int nextValue =

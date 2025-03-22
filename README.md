@@ -26,7 +26,7 @@ void main() {
   final humanizer = HumanizeNumber();
   humanizer.settings(currency: 'USD');
   
-  print(humanizer.parse(2386, 'en')); // Output: Two thousand three hundred eighty six USD
+  print(humanizer.parse(2386, 'en')); // Output: Two thousand three hundred eighty-six USD
   print(humanizer.lastResult); // ----------------^
   print(humanizer.lastNumberParsed); // 2386
   print(humanizer.currentTranslationLanguage); // en
