@@ -1,0 +1,16 @@
+name: humanize_numbers 
+description: Convert any number into a readable string version 
+version: 1.0.0
+documentation: https://github.com/CatHood0/dart-humanize-numbers
+homepage: https://github.com/CatHood0/dart-humanize-numbers
+issue_tracker: https://github.com/CatHood0/dart-humanize-numbers/issues
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  meta: ^1.16.0
+
+dev_dependencies:
+  test: ^1.25.14
+  lints: ^5.0.0
