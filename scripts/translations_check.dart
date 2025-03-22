@@ -54,7 +54,7 @@ Future<void> main(List<String> args) async {
 
   print('All translations passed the check successfully');
 
-  exit(1);
+  exit(0);
 }
 
 void _validateMap(
