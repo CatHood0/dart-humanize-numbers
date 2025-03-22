@@ -1,5 +1,5 @@
 name: humanize_numbers 
-description: Convert any number into a readable string version 
+description: Convert numbers into their word representation 
 version: 1.0.0
 documentation: https://github.com/CatHood0/dart-humanize-numbers
 homepage: https://github.com/CatHood0/dart-humanize-numbers
