@@ -5,6 +5,7 @@ documentation: https://github.com/CatHood0/dart-humanize-numbers
 homepage: https://github.com/CatHood0/dart-humanize-numbers
 repository: https://github.com/CatHood0/dart-humanize-numbers
 issue_tracker: https://github.com/CatHood0/dart-humanize-numbers/issues
+topics: [text, numbers, number, natural-numbers]
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
