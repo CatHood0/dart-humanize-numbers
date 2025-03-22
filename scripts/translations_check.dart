@@ -1,10 +1,5 @@
 // This script has one task, which is to prevent the translations from
-// being accidentally deleted, as we have more than 40 files for both the
-// arb files (source) and the dart files (the generated)
-// which make it harder to review the changes, some keys can be deleted
-// without update the generated dart files which will cause a bug/build failure
-// on the next time running the script after doing some changes to the translations
-// which make it harder to revert the changes
+// being accidentally deleted, as we probably will have more than 7 soon
 import 'dart:io' show exit;
 import 'package:humanize_numbers/src/translations/translations.dart';
 
@@ -56,7 +51,7 @@ Future<void> main(List<String> args) async {
     );
   }
 
-  print('All the translation pass the check successfully');
+  print('All translations passed the check successfully');
 
   exit(1);
 }
