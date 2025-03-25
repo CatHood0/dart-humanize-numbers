@@ -25,12 +25,10 @@ class PortugueseTranslation extends HumanizeTranslation
       return (right > 0 && right < 100) ? " e " : " ";
     }
 
-    // 2. Conector dentro de las centenas (ej: "trezentos e oitenta")
     if (left >= 100 && right > 0) {
       return " e ";
     }
 
-    // 3. Conector entre decenas (≥20) y unidades (ej: "oitenta e seis")
     if (left >= 20 && right > 0 && left < 100) {
       return " e ";
     }
